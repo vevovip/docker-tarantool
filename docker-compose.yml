@@ -8,6 +8,8 @@ services:
             - dev-back
         ports:
             - "3301:3301"
+        volumes:
+            - ./data/tarantool1:/var/lib/tarantool
         environment:
             TARANTOOL_REPLICATION: "tarantool1,tarantool2"
             TARANTOOL_USER_NAME: admin
@@ -21,6 +23,8 @@ services:
             - dev-back
         ports:
             - "3302:3301"
+        volumes:
+            - ./data/tarantool2:/var/lib/tarantool
         environment:
             TARANTOOL_REPLICATION: "tarantool1,tarantool2"
             TARANTOOL_USER_NAME: admin
