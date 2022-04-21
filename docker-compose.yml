@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
     tarantool1:
-        image: tarantool/tarantool:1.10.2
+        image: tarantool/tarantool
         container_name: tarantool1
         networks:
             - dev-back
@@ -17,7 +17,7 @@ services:
             TARANTOOL_SLAB_ALLOC_ARENA: 0.1
     
     tarantool2:
-        image: tarantool/tarantool:1.10.2
+        image: tarantool/tarantool
         container_name: tarantool2
         networks:
             - dev-back

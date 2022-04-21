@@ -1,6 +1,6 @@
 # Docker tarantool
 
-Tarantool version: 1.10.2
+Tarantool version: latest
 
 ```
 Admin url: http://localhost:8888
